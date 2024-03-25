@@ -1,0 +1,50 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publication_year": 1960,
+    "genre": ["Fiction", "Classic"],
+    "image": "https://www.teachercreatedmaterials.com/estore/files/covers/40308.png"
+  },
+  {
+    "bookId": 2,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "publication_year": 1949,
+    "genre": ["Dystopian", "Science Fiction"],
+    "image": "https://bookbins.in/wp-content/uploads/2022/12/1984-George-Orwell-Buy-Online-Bookbins-1.png"
+  },
+  {
+    "bookId": 3,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publication_year": 1813,
+    "genre": ["Classic", "Romance"],
+    "image": "https://images.blinkist.io/images/books/65d4ad775adcee00073ee50a/1_1/470.jpg"
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publication_year": 1925,
+    "genre": ["Fiction", "Classic"],
+    "image": "https://images.blinkist.io/images/books/63f4be590ed5a80008585f17/1_1/470.jpg"
+  },
+  {
+    "bookId": 5,
+    "bookName": "Moby-Dick",
+    "author": "Herman Melville",
+    "publication_year": 1851,
+    "genre": ["Fiction", "Adventure"],
+    "image": "https://fakeimg.pl/667x1000/cc6600"
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publication_year": 1954,
+    "genre": ["Fantasy", "Adventure"],
+    "image": "https://fakeimg.pl/667x1000/cc6600"
+  }
+]
