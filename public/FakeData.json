@@ -4,47 +4,83 @@
     "bookName": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "publication_year": 1960,
-    "genre": ["Fiction", "Classic"],
-    "image": "https://www.teachercreatedmaterials.com/estore/files/covers/40308.png"
+    "tags": ["Fiction", "Classic"],
+    "category": "Fiction",
+    "image": "https://www.teachercreatedmaterials.com/estore/files/covers/40308.png",
+    "rating": 4.8,
+    "totalPages": 336,
+    "review": "To Kill a Mockingbird is a powerful story about racial injustice in the American South. Set in the 1930s, it follows the Finch family and their experiences in the fictional town of Maycomb, Alabama. The novel explores themes of empathy, morality, and courage. Harper Lee's evocative writing transports readers to a time when prejudice and compassion clashed in a small Southern town.",
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
   },
   {
     "bookId": 2,
     "bookName": "1984",
     "author": "George Orwell",
     "publication_year": 1949,
-    "genre": ["Dystopian", "Science Fiction"],
-    "image": "https://bookbins.in/wp-content/uploads/2022/12/1984-George-Orwell-Buy-Online-Bookbins-1.png"
+    "tags": ["Dystopian", "Science Fiction"],
+    "category": "Science Fiction",
+    "image": "https://bookbins.in/wp-content/uploads/2022/12/1984-George-Orwell-Buy-Online-Bookbins-1.png",
+    "rating": 4.5,
+    "totalPages": 328,
+    "review": "1984 is a dystopian novel that paints a chilling picture of a totalitarian society. Set in Airstrip One (formerly known as Britain), the story follows Winston Smith as he rebels against the oppressive regime led by Big Brother. Orwell's warnings about surveillance, censorship, and thought control remain relevant today.",
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
   },
   {
     "bookId": 3,
     "bookName": "Pride and Prejudice",
     "author": "Jane Austen",
     "publication_year": 1813,
-    "genre": ["Classic", "Romance"],
-    "image": "https://images.blinkist.io/images/books/65d4ad775adcee00073ee50a/1_1/470.jpg"
+    "tags": ["Classic", "Romance"],
+    "category": "Romance",
+    "image": "https://images.blinkist.io/images/books/65d4ad775adcee00073ee50a/1_1/470.jpg",
+    "rating": 4.5,
+    "totalPages": 266,
+    "review": "Pride and Prejudice is a timeless romance novel that explores the complexities of love, class, and societal expectations. Elizabeth Bennet and Mr. Darcy's relationship unfolds against the backdrop of early 19th-century England. Austen's wit and keen observations make this novel a delightful read.",
+    "publisher": "Thomas Egerton",
+    "yearOfPublishing": 1813
   },
   {
     "bookId": 4,
     "bookName": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "publication_year": 1925,
-    "genre": ["Fiction", "Classic"],
-    "image": "https://images.blinkist.io/images/books/63f4be590ed5a80008585f17/1_1/470.jpg"
+    "tags": ["Fiction", "Classic"],
+    "category": "Fiction",
+    "image": "https://images.blinkist.io/images/books/63f4be590ed5a80008585f17/1_1/470.jpg",
+    "rating": 4.4,
+    "totalPages": 192,
+    "review": "The Great Gatsby is a classic novel set in the Roaring Twenties. The story revolves around the mysterious millionaire Jay Gatsby and his unrequited love for Daisy Buchanan. Fitzgerald's prose captures the decadence and disillusionment of the Jazz Age. The vivid descriptions of extravagant parties, forbidden love, and societal excess make this a timeless masterpiece.",
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
   },
   {
     "bookId": 5,
     "bookName": "Moby-Dick",
     "author": "Herman Melville",
     "publication_year": 1851,
-    "genre": ["Fiction", "Adventure"],
-    "image": "https://fakeimg.pl/667x1000/cc6600"
+    "tags": ["Fiction", "Adventure"],
+    "category": "Literary Fiction",
+    "image": "https://whatsupnewp.com/wp-content/uploads/2024/03/300004_Bristol_Bookfest_2024_RGB_Cover_m1.png",
+    "rating": 4.6,
+    "totalPages": 746,
+    "review": "The Catcher in the Rye is a coming-of-age novel that follows Holden Caulfield's journey through New York City. Holden's cynicism, alienation, and search for authenticity resonate with readers of all ages. Salinger's portrayal of teenage angst remains iconic.",
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
   },
   {
     "bookId": 6,
     "bookName": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "publication_year": 1954,
-    "genre": ["Fantasy", "Adventure"],
-    "image": "https://fakeimg.pl/667x1000/cc6600"
+    "tags": ["Fantasy", "Adventure"],
+    "category": "Fiction",
+    "image": "https://clearcreekmonks.org/wp-content/uploads/2024/02/lord-of-the-rings.png",
+    "rating": 4.6,
+    "totalPages": 1150,
+    "review": "The Great Gatsby” by F. Scott Fitzgerald is a timeless classic that transports readers to the opulent and tumultuous world of 1920s America. Set against the backdrop of the Jazz Age, the novel follows the enigmatic Jay Gatsby and his unrequited love for Daisy Buchanan.Fitzgerald's prose is both poetic and piercing, capturing the excesses, illusions, and disillusionments of the Roaring Twenties. The vivid descriptions of extravagant parties, forbidden love, and societal excess make this a timeless masterpiece.Through the eyes of Nick Carraway, the novel explores themes of wealth, social class, and the pursuit of unattainable dreams. Gatsby's relentless pursuit of success and love reveals the emptiness of material wealth and the fragility of human desires.",
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1980
   }
 ]

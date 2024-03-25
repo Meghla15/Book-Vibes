@@ -4,6 +4,9 @@ import Root from "../Root";
 import Home from "../Home/Home";
 import ListedBooks from "../ListedBooks/ListedBooks";
 import PagesToLoad from "../PagesToLoad/PagesToLoad";
+import CardDetail from "../CardDetail";
+
+
 
 
 
@@ -25,6 +28,10 @@ const router = createBrowserRouter([
             path: "/pagesToRead",
             element: <PagesToLoad></PagesToLoad>,
         },
+        {
+           path:"/card-details/:id",
+           element:<CardDetail></CardDetail>
+        }
       ],
     },
   ]);
