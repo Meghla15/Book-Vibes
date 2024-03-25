@@ -1,6 +1,6 @@
 [
   {
-    "bookId": 1,
+    "id": 1,
     "bookName": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "publication_year": 1960,
@@ -14,7 +14,7 @@
     "yearOfPublishing": 1960
   },
   {
-    "bookId": 2,
+    "id": 2,
     "bookName": "1984",
     "author": "George Orwell",
     "publication_year": 1949,
@@ -28,7 +28,7 @@
     "yearOfPublishing": 1949
   },
   {
-    "bookId": 3,
+    "id": 3,
     "bookName": "Pride and Prejudice",
     "author": "Jane Austen",
     "publication_year": 1813,
@@ -42,7 +42,7 @@
     "yearOfPublishing": 1813
   },
   {
-    "bookId": 4,
+    "id": 4,
     "bookName": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "publication_year": 1925,
@@ -56,7 +56,7 @@
     "yearOfPublishing": 1925
   },
   {
-    "bookId": 5,
+    "id": 5,
     "bookName": "Moby-Dick",
     "author": "Herman Melville",
     "publication_year": 1851,
@@ -70,7 +70,7 @@
     "yearOfPublishing": 1951
   },
   {
-    "bookId": 6,
+    "id": 6,
     "bookName": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "publication_year": 1954,
