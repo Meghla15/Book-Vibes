@@ -8,6 +8,7 @@ import ReadBook from "../Components/ReadBook";
 import WishList from "../Components/WishList";
 import CartDetails from "../Components/CartDetails";
 import Contact from "../Home/Contact";
+import AboutUs from "../Home/AboutUs";
 
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
         {
            path:"/contact",
            element:<Contact></Contact>
+        },
+        {
+          path:"/aboutUs",
+          element:<AboutUs></AboutUs>
         },
         {
            path:"/cart-details/:id",
