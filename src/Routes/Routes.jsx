@@ -7,6 +7,7 @@ import PagesToLoad from "../PagesToLoad/PagesToLoad";
 import ReadBook from "../Components/ReadBook";
 import WishList from "../Components/WishList";
 import CartDetails from "../Components/CartDetails";
+import Contact from "../Home/Contact";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         {
             path: "/pagesToRead",
             element: <PagesToLoad></PagesToLoad>,
+        },
+        {
+           path:"/contact",
+           element:<Contact></Contact>
         },
         {
            path:"/cart-details/:id",

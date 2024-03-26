@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 const ListedBooksPage = ({ cardData }) => {
   const {
+    id,
     bookName,
     author,
     image,
@@ -11,7 +14,8 @@ const ListedBooksPage = ({ cardData }) => {
     totalPages,
   } = cardData || {};
   return (
-    <div className="card card-side bg-base-100 container mx-auto border-[1px] flex gap-12 mt-3 p-4">
+     
+    <div className="card card-side bg-base-100 container mx-auto border-[1px] flex lg:flex-row flex-col gap-12 mt-3 p-4">
       
       <figure><img className="max-w-lg w-44 h-48 shadow-2xl bg-base-300 p-4 rounded-lg "  src={image} alt=""/></figure>
       
@@ -21,12 +25,12 @@ const ListedBooksPage = ({ cardData }) => {
           <div className="flex gap-3 justify-between">
             <div className="flex gap-2">Tags
               {
-                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)
+                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 lg:px-2 p-2  text-center lg:rounded-3xl rounded-xl" key={tag}>#{tag}</a>)
                  
                 )
               }
             </div>
-            <div className="flex">
+            <div className="flex ">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +55,7 @@ const ListedBooksPage = ({ cardData }) => {
               Year of Publishing : {publication_year}
             </div>
           </div>
-          <div className="flex justify-between mt-2 opacity-70">
+          <div className="flex lg:flex-row flex-col gap-2 justify-between mt-2 opacity-70">
             <div className="flex">
               <div className="">
                 <svg
@@ -99,9 +103,9 @@ const ListedBooksPage = ({ cardData }) => {
             <button className="btn rounded-3xl bg-orange-100 text-orange-400 sm:btn-sm btn-md ">
               Rating : {rating}
             </button>
-            <button className="btn rounded-3xl bg-[#23BE0A] text-white sm:btn-sm btn-md ">
+           <Link to={`/cart-details/${id}`}> <button className="btn rounded-3xl bg-[#23BE0A] text-white sm:btn-sm btn-md ">
               View Details
-            </button>
+            </button></Link>
           </div>
         </div>
       

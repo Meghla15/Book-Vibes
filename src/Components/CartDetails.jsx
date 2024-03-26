@@ -3,17 +3,17 @@ import { useParams } from 'react-router-dom';
 import useBooksCartData from '../Hooks/useBooksCartData';
 import { saveToLocalStorage } from '../Utiles/localStorage';
 
+
 const CartDetails = () => {
     const [singleData, setSingleData] =useState({});
     const {id} = useParams();
     const {cardData} =useBooksCartData()
     // console.log(id)
     
-    // const handleClick =() =>{
-    //      saveToLocalStorage(singleData)
-    //     //  console.log(singleData)
-
-    // }
+    const handleClick =()=>{
+        saveToLocalStorage(singleData)
+        console.log(singleData)
+    }
 
     useEffect(()=>{
         if (cardData) {
@@ -50,51 +50,21 @@ const CartDetails = () => {
                 <span className="font-bold">Review : </span>
                 {review}
               </p>
-              <p><span className="font-bold">Tags</span>  {tags.map((tag) => (
-                <a
-                  className="text-[#23BE0A] bg-slate-200  mr-3 px-3 rounded-3xl"
-                  key={tag}
-                >
-                  #{tag}
-                </a>
-              ))}</p>
+              {/* <div className="flex gap-2">Tags
+              {
+                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)
+                 
+                )
+              }
+            </div> */}
               <p className="border-[1px] border-dashed border-l-gray-400 mt-4"></p>
               <p>Number of Pages : <span className='font-bold '>{totalPages}</span></p>
               <p>Publisher : <span className='font-bold'>{publisher}</span></p>
               <p>Year of Publication : <span className='font-bold'>{publication_year}</span></p>
               <p>Rating : <span className='font-bold'>{rating}</span></p>
-              {/* <div onClick={handleClick}>
-                <button className='btn btn-ghost'>Read</button>
-                <button className='btn btn-ghost'>WishList</button>
-              </div> */}
 
-
-
-
-
-
-
-              {/* <p className="border-[1px] border-dashed border-l-gray-400 mt-4"></p>
-              <p>
-                Number of Pages :
-                <span className="font-bold">{totalPages}</span>
-              </p>
-              <p>
-                Publisher : <span className="font-bold">{publisher}</span>
-              </p>
-              <p>
-                Year of Publishing :
-                <span className="font-bold">{publication_year}</span>
-              </p>
-              <p>
-                Rating : <span className="font-bold">{rating}</span>
-              </p>
-              <button onClick={handleClick} className="btn btn-ghost">
-                Read
-              </button>
-              <button onClick={handleClick} className="btn btn-ghost">
-                WishList
-              </button> */}
+              <button onClick={handleClick} className='btn btn-ghost'>Read</button>
+              <button onClick={handleClick} className='btn btn-ghost'>WishList</button>
             </div>
           </a>
         </div>
