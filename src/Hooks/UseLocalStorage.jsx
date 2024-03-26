@@ -3,7 +3,7 @@ import { getFromLocalStorage } from '../Utiles/localStorage';
 
 const UseLocalStorage = () => {
     const [localStorage, setLocalStorage] = useState([]);
-    console.log(localStorage)
+    // console.log(localStorage)
 
     useEffect (()=>{
         setLocalStorage(getFromLocalStorage());

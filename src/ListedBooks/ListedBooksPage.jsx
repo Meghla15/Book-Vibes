@@ -18,7 +18,7 @@ const ListedBooksPage = ({ cardData }) => {
         <div>
           <h1 className="text-2xl font-bold">{bookName}</h1>
           <p className="py-1 font-medium">By : {author}</p>
-          <div className="flex justify-between">
+          <div className="flex gap-3 justify-between">
             <div className="flex gap-2">Tags
               {
                 tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)

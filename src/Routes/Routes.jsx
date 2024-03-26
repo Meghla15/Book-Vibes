@@ -4,9 +4,9 @@ import Root from "../Root";
 import Home from "../Home/Home";
 import ListedBooks from "../ListedBooks/ListedBooks";
 import PagesToLoad from "../PagesToLoad/PagesToLoad";
-import CardDetail from "../CardDetail";
 import ReadBook from "../Components/ReadBook";
 import WishList from "../Components/WishList";
+import CartDetails from "../Components/CartDetails";
 
 
 
@@ -41,8 +41,8 @@ const router = createBrowserRouter([
             element: <PagesToLoad></PagesToLoad>,
         },
         {
-           path:"/card-details/:id",
-           element:<CardDetail></CardDetail>
+           path:"/cart-details/:id",
+           element:<CartDetails></CartDetails> 
         }
       ],
     },

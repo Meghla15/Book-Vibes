@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
+
 const BookCart = ({ item }) => {
   const { id, bookName, author, image, rating, tags, category } =
     item || {};
   return (
-    <Link to={`/card-details/${id}`}>
-      <div className="max-w-[370px] p-6 rounded-md border-[1px] dark:bg-gray-50 dark:text-gray-900 container mx-auto">
+    <Link to={`/cart-details/${id}`}>
+    <div className="max-w-[370px] p-6 rounded-md border-[1px] dark:bg-gray-50 dark:text-gray-900 container mx-auto">
         <img
           src={image}
           alt=""

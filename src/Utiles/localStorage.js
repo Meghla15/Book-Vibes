@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 export const saveToLocalStorage = (cardData) => {
@@ -9,9 +10,9 @@ export const saveToLocalStorage = (cardData) => {
         if (!existedData) {
             savedData.push(cardData);
             localStorage.setItem("listedBooks", JSON.stringify(savedData));
-            alert("Already added");
+            toast.success("It's Already Added");
         } else {
-            alert("Already exists!");
+            toast.warning("Already Exists!");
         }
    
 };

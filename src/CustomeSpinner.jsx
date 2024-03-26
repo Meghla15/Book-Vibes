@@ -1,34 +1,33 @@
+import React from 'react';
 
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import useBooksCartData from "./Hooks/useBooksCartData";
-import { saveToLocalStorage } from "./Utiles/localStorage";
+const CustomeSpinner = () => {
 
-
-  
-
-const CardDetail = () => {
-   const [singleData, setSingleData] =useState({});
-   const {id} = useParams();
-   const {cardData,loading} =useBooksCartData();
-   
-
-   const handleClick =()=>{
-    saveToLocalStorage(singleData);
-    console.log(singleData)
-   }
-   
-   useEffect(() =>{
-    if (cardData) {
-      const singleData = cardData.find((item) => item.id == id)
-      setSingleData(singleData)        
+    const [singleData, setSingleData] =useState({});
+    const {id} = useParams();
+    const {cardData,loading} =useBooksCartData();
+    
+ 
+    const handleClick =()=>{
+     saveToLocalStorage(singleData);
+     // console.log(singleData)
     }
-   },[cardData,id])
-
-   const  { bookName, author, image, rating, tags, category,review,publication_year,publisher,totalPages } = singleData ||{}
-      
+    
+    useEffect(() =>{
+     if (cardData) {
+       const singleData = cardData.find((item) => item.id == id)
+       setSingleData(singleData)      
+       // console.log(singleData)  
+     }
+    },[cardData,id])
+ 
+    const  { bookName, author, image, rating, tags, category,review,publication_year,publisher,totalPages } = singleData ||{}
+  
     return (
-    <section className="dark:bg-gray-100 dark:text-gray-800">
+        <div>
+            <span className="loading loading-spinner loading-lg"></span>
+
+
+            <section className="dark:bg-gray-100 dark:text-gray-800">
       <div className="container max-w-6xl p-6 mx-auto  sm:space-y-12">
       <a
           rel="noopener noreferrer"
@@ -53,7 +52,11 @@ const CardDetail = () => {
             <p><span className="font-bold">Review : </span>
               {review}
             </p>
-            <p>Tag {tags}</p>
+            {
+                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200  mr-3 px-3 rounded-3xl" key={tag}>#{tag}</a>)
+                 
+                )
+              }
             <p className="border-[1px] border-dashed border-l-gray-400 mt-4"></p>
             <p>Number of Pages : <span className="font-bold">{totalPages}</span></p>
             <p>Publisher : <span className="font-bold">{publisher}</span></p>
@@ -68,7 +71,8 @@ const CardDetail = () => {
         
       </div>
     </section>
-  );
+        </div>
+    );
 };
 
-export default CardDetail;
+export default CustomeSpinner;
