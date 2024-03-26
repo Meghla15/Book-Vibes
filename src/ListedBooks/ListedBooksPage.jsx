@@ -6,7 +6,6 @@ const ListedBooksPage = ({ cardData }) => {
     rating,
     tags,
     category,
-    review,
     publication_year,
     publisher,
     totalPages,
@@ -14,13 +13,19 @@ const ListedBooksPage = ({ cardData }) => {
   return (
     <div className="card card-side bg-base-100 container mx-auto border-[1px] flex gap-12 mt-3 p-4">
       
-      <figure><img className="max-w-lg w-44 h-48 shadow-2xl bg-base-300 p-4 rounded-lg "  src={image} alt="Movie"/></figure>
+      <figure><img className="max-w-lg w-44 h-48 shadow-2xl bg-base-300 p-4 rounded-lg "  src={image} alt=""/></figure>
       
         <div>
           <h1 className="text-2xl font-bold">{bookName}</h1>
           <p className="py-1 font-medium">By : {author}</p>
           <div className="flex justify-between">
-            <div>tag</div>
+            <div className="flex gap-2">Tags
+              {
+                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)
+                 
+                )
+              }
+            </div>
             <div className="flex">
               <div>
                 <svg

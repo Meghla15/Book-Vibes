@@ -12,6 +12,11 @@ const BookCart = ({ item }) => {
           className="object-cover object-center w-full rounded-md h-72 bg-gray-200 p-3"
         />
         <div className="mt-6 mb-2">
+        {
+                tags.map(tag =>( <a className="text-[#23BE0A] mr-3 bg-slate-200 px-2 py-1 rounded-3xl" key={tag}>{tag}</a>)
+                 
+                )
+              }
           <h2 className="text-xl font-bold tracking-wide">{bookName}</h2>
         </div>
         <p className="dark:text-gray-800">By:{author}</p>
