@@ -2,15 +2,20 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useBooksCartData from "./Hooks/useBooksCartData";
+import { saveToLocalStorage } from "./Utiles/localStorage";
 
+
+  
 
 const CardDetail = () => {
    const [singleData, setSingleData] =useState({});
    const {id} = useParams();
    const {cardData,loading} =useBooksCartData();
+   
 
    const handleClick =()=>{
-    
+    saveToLocalStorage(singleData);
+    console.log(singleData)
    }
    
    useEffect(() =>{
@@ -54,12 +59,13 @@ const CardDetail = () => {
             <p>Publisher : <span className="font-bold">{publisher}</span></p>
             <p>Year of Publishing : <span className="font-bold">{publication_year}</span></p>
             <p>Rating : <span className="font-bold">{rating}</span></p>
-            <button onClick={handleClick()} className="btn btn-ghost">Read</button>
-            <button  className="btn btn-ghost">WishList</button>
+            <button onClick={handleClick} className="btn btn-ghost">Read</button>
+            <button  onClick={handleClick} className="btn btn-ghost">WishList</button>
           </div>
         </a>
         
-      
+       
+        
       </div>
     </section>
   );
