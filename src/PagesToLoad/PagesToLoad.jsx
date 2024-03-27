@@ -2,10 +2,10 @@ import UseLocalStorage from "../Hooks/UseLocalStorage";
 import useBooksCartData from "../Hooks/useBooksCartData";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 
-const PagesToLoad = () => {
+const PagesToLoad = ({item}) => {
     const {cardData} = useBooksCartData()
     const {localData} = UseLocalStorage()
-    
+   
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
