@@ -8,7 +8,7 @@ const useBooksCartData = () => {
     useEffect(()=>{
         const fetchData = async()=>{
             setLoading(true)
-            const res =await fetch('/public/FakeData.json')
+            const res =await fetch('./FakeData.json')
             const data = await res.json();
             setCardData(data);
             setLoading(false)
