@@ -50,13 +50,13 @@ const CartDetails = () => {
                 <span className="font-bold">Review : </span>
                 {review}
               </p>
-              {/* <div className="flex gap-2">Tags
+              <div className="flex gap-2">Tags
               {
-                tags.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)
+                tags?.map(tag =>( <a className="text-[#23BE0A] bg-slate-200 px-2 rounded-3xl" key={tag}>#{tag}</a>)
                  
                 )
               }
-            </div> */}
+            </div>
               <p className="border-[1px] border-dashed border-l-gray-400 mt-4"></p>
               <p>Number of Pages : <span className='font-bold '>{totalPages}</span></p>
               <p>Publisher : <span className='font-bold'>{publisher}</span></p>
